@@ -1,6 +1,6 @@
 use std::net::Ipv4Addr;
 
-use crate::{align, ipv4_at, read_u16, read_u32, DumpError, RTA_DST, RTA_GATEWAY, RTA_OIF};
+use crate::socket::{align, ipv4_at, read_u16, read_u32, DumpError, RTA_DST, RTA_GATEWAY, RTA_OIF};
 
 #[derive(Debug, Clone, PartialEq, Eq)]
 pub enum Attr {

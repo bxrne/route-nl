@@ -1,7 +1,7 @@
 use std::net::Ipv4Addr;
 
 use crate::attr::{Attr, AttrIter};
-use crate::{align, DumpError, HDR, RTMSG};
+use crate::socket::{align, DumpError, HDR, RTMSG};
 
 /// Missing RTA_DST is default, not 0.0.0.0.
 #[derive(Debug, Clone, PartialEq, Eq)]

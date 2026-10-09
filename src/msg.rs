@@ -1,7 +1,7 @@
 use std::io;
 
 use crate::route::{parse_route, Route};
-use crate::{read_i32, read_u16, read_u32, DumpError, HDR, NLMSG_DONE, NLMSG_ERROR, RTM_NEWROUTE};
+use crate::socket::{read_i32, read_u16, read_u32, DumpError, HDR, NLMSG_DONE, NLMSG_ERROR, RTM_NEWROUTE};
 
 #[derive(Debug, Clone, PartialEq, Eq)]
 pub enum Msg {
